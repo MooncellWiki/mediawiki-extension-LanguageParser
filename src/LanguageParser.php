@@ -26,7 +26,8 @@ class LanguageParser {
 	public static function onParserFirstCallInit( Parser $parser ) {
 
 		global $wgLanguageTagLanguages;
-
+		
+		// Register Parser Function
 		$parser->setFunctionHook( 'tsl', [ __CLASS__, 'LanguageTagRender' ] );
 	}
 	
