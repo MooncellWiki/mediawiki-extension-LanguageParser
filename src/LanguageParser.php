@@ -55,7 +55,7 @@ class LanguageParser {
             return [ $input, 'noparse' => false ];
         }
         
-        if ( strpos($wgLang->getCode(), "zh") !== false || $lang == "zh" ) {
+        if ( strpos($wgLang->getCode(), "zh") !== false && $lang == "zh" ) {
             return [ $input, 'noparse' => false ];
         }
 
