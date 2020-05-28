@@ -1,0 +1,32 @@
+{
+	"name": "LanguageParser",
+	"version": "1.0.0",
+	"author": "StarHeartHunt",
+	"url": "https://github.com/StarHeartHunt/LanguageParser",
+	"descriptionmsg": "languagetag-desc",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"LanguageTag": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"LanguageParser": "src/LanguageParser.php"
+	},
+	"ExtensionMessagesFiles": {
+		"LanguageParserMagic": "LanguageParser.i18n.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "LanguageParser::onParserFirstCallInit"
+	},
+	"config": {
+		"LanguageTagLanguages": {
+			"value": [],
+			"description": "Adjust that array to set what language tag's should be parsed. E.g. 'en', 'hu'"
+		}
+	},
+	"manifest_version": 2
+}
