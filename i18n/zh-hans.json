@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"StarHeartHunt"
+		]
+	},
+	"languageparser-desc": "允许使用解析器函数以标记不同语言，并正确显示它们"
+}

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"StarHeartHunt"
+		]
+	},
+	"languageparser-desc": "Allows to use parser function to markup different languages, and display them properly"
+}
