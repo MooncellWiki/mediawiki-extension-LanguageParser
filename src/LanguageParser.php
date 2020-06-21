@@ -65,7 +65,7 @@ class LanguageParser {
 		   return [ $input, 'noparse' => false ];
 		} else {
 		   // Otherwise we will return nothing.
-		   return true;
+		   return '';
 		}
 	}
 }
