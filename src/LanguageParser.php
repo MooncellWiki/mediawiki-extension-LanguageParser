@@ -64,8 +64,8 @@ class LanguageParser {
 		   // Match. The Language (set by LanguageSelector) is equal to the language tag.
 		   return [ $input, 'noparse' => false ];
 		} else {
-		   // Other wise we return the text as html-comment, thus not visible in the browser.
-		   return [ '<!-- ' . $lang . ': ' . $input . ' -->', 'noparse' => true, 'isHTML' => true ];
+		   // Otherwise we will return nothing.
+		   return true;
 		}
 	}
 }
